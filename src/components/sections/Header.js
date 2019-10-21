@@ -12,7 +12,7 @@ const Header = () => (
       query {
         art_build: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "build" }
+          name: { eq: "risk" }
         ) {
           childImageSharp {
             fluid(maxWidth: 1400) {
@@ -31,18 +31,16 @@ const Header = () => (
             </Art>
             <Text>
               <h1>
-                Fast in
+                Financial security
                 <br />
-                every way
-                <br />
-                that matters
+                for every startup
               </h1>
               <br />
-              <p>
+              {/* <p>
                 <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
                   Check out source &nbsp;&#x2794;
                 </StyledExternalLink>
-              </p>
+              </p> */}
             </Text>
           </Grid>
         </Container>

@@ -48,12 +48,9 @@ const About = () => (
         <Container>
           <Grid>
             <div>
-              <h2>Speed past the competition</h2>
+              <h2>Financial power to the startups</h2>
               <p>
-                Gatsby.js builds the fastest possible website. Instead of
-                waiting to generate pages when requested, pre-build pages and
-                lift them into a global cloud of servers — ready to be delivered
-                instantly to your users wherever they are.
+              At an early stage many startups lack proper financial consultancy. We want to close this gap and offer.
               </p>
             </div>
             <Art>
