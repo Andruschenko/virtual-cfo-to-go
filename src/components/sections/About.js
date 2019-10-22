@@ -11,7 +11,7 @@ const About = () => (
       query {
         art_fast: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "fast" }
+          name: { eq: "learn_yourself" }
         ) {
           childImageSharp {
             fluid(maxWidth: 760) {
@@ -22,7 +22,7 @@ const About = () => (
 
         art_learn: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "learn_yourself" }
+          name: { eq: "risk2" }
         ) {
           childImageSharp {
             fluid(maxWidth: 760) {
@@ -62,23 +62,51 @@ const About = () => (
               <Img fluid={data.art_learn.childImageSharp.fluid} />
             </Art>
             <div>
-              <h2>Nothing new to learn here</h2>
+              <h2>Foreign Currency Riskmanagement</h2>
               <p>
-                Enjoy the power of the latest web technologies – React.js ,
-                Webpack , modern JavaScript and CSS and more — all set up and
-                waiting for you to start building.
+                In case your ride gets a bit bumpy, we recommend you to build
+                yourself a currency safety net to protect yourself agains
+                currency fluctuations which may occur because of external factors
+                you can't control.
               </p>
             </div>
           </Grid>
           <Grid>
             <div>
-              <h2>Grow and build your ideas</h2>
+              <h2>Idle Cash Investment</h2>
               <p>
-                Waste no more time on tooling and performance. Focus on the the
-                site you want to build and nothing more.
+                In case you have money lying around on your bank account which
+                is not needed now because your run-rate is big enough, we recommend
+                you ways to store your money with interest profits instead of it
+                lying around without any gain.
                 <br />
                 <br />
-                Gatsby is fast in every way that matters.
+                Money can work for you - we'll help you with it!
+              </p>
+            </div>
+            <Art>
+              <Img fluid={data.art_ideas.childImageSharp.fluid} />
+            </Art>
+          </Grid>
+          <Grid inverse>
+            <Art>
+              <Img fluid={data.art_learn.childImageSharp.fluid} />
+            </Art>
+            <div>
+              <h2>Liquidity Planing & Analysis</h2>
+              <p>
+                See how your money does in a beautiful chart - with dynamically changing values.
+              </p>
+            </div>
+          </Grid>
+          <Grid>
+            <div>
+              <h2>Accounting Assistance</h2>
+              <p>
+                We help you with your accounting....
+                <br />
+                <br />
+                Where accounting is at home.
               </p>
             </div>
             <Art>

@@ -12,7 +12,7 @@ const Header = () => (
       query {
         art_build: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "risk" }
+          name: { eq: "fast" }
         ) {
           childImageSharp {
             fluid(maxWidth: 1400) {
@@ -31,9 +31,11 @@ const Header = () => (
             </Art>
             <Text>
               <h1>
-                Financial security
+                Bespoke financial solutions
                 <br />
-                for every startup
+                for start-ups
+                <br />
+                - powered by AI
               </h1>
               <br />
               {/* <p>
