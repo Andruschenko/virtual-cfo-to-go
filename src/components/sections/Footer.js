@@ -13,15 +13,15 @@ import TwitterIcon from '@static/icons/twitter.svg';
 const SOCIAL = [
   {
     icon: GithubIcon,
-    link: 'https://github.com/ajayns/gatsby-absurd',
+    link: 'https://github.com/Andruschenko',
   },
   {
     icon: InstagramIcon,
-    link: 'https://instagram.com/ajay_ns',
+    link: 'https://instagram.com/andrechinatiger',
   },
   {
     icon: TwitterIcon,
-    link: 'https://twitter.com/ajayns08',
+    link: 'https://twitter.com/andrekovac',
   },
 ];
 
@@ -43,23 +43,16 @@ const Footer = () => (
     `}
     render={data => (
       <React.Fragment>
-        <Art>
+        {/* <Art>
           <Img
             fluid={data.art_pot.childImageSharp.fluid}
             style={{ width: 480, maxWidth: '100%', marginBottom: -16 }}
           />
-        </Art>
+        </Art> */}
         <FooterWrapper>
           <StyledContainer>
             <Copyright>
-              <h2>Absurd</h2>
-              <span>
-                Illustrations by
-                {` `}
-                <ExternalLink href="https://twitter.com/diana_valeanu">
-                  @diana_valeanu
-                </ExternalLink>
-              </span>
+              <h2>Financial CFO to go</h2>
             </Copyright>
             <SocialIcons>
               {SOCIAL.map(({ icon, link }) => (

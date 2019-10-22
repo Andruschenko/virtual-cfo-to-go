@@ -10,11 +10,13 @@ const TEAM = [
     name: 'Florian Sossau',
     image: 'florian.jpg',
     role: 'Finance Ninja',
+    notes: '15 years experience in financial industry. Previous executive director at JP Morgan.',
   },
   {
     name: 'André Kovac',
     image: 'andre.jpg',
     role: 'Tech Ninja',
+    notes: 'Experienced CTO, Full-Stack Developer and Educator',
   },
   // {
   //   name: 'Ashlyn Harris',
@@ -55,8 +57,8 @@ const Team = () => (
           }
         }
         art_team: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "team_work" }
+          sourceInstanceName: { eq: "finance" }
+          name: { eq: "logo-chart" }
         ) {
           childImageSharp {
             fluid(maxWidth: 1600) {
@@ -71,7 +73,7 @@ const Team = () => (
         <Container style={{ position: 'relative' }}>
           <h1>The Team</h1>
           <TeamGrid>
-            {TEAM.map(({ name, image, role }) => {
+            {TEAM.map(({ name, image, role, notes }) => {
               const img = data.allFile.edges.find(
                 ({ node }) => node.relativePath === image
               ).node;
@@ -81,16 +83,17 @@ const Team = () => (
                   <Img fluid={img.childImageSharp.fluid} alt={name} />
                   <Title>{name}</Title>
                   <Subtitle>{role}</Subtitle>
+                  <SubSubtitle>{notes}</SubSubtitle>
                 </div>
               );
             })}
           </TeamGrid>
-          <Art>
+          {/* <Art>
             <Img fluid={data.art_team.childImageSharp.fluid} />
           </Art>
           <ArtMobile>
             <Img fluid={data.art_team.childImageSharp.fluid} />
-          </ArtMobile>
+          </ArtMobile> */}
         </Container>
       </Section>
     )}
@@ -99,7 +102,7 @@ const Team = () => (
 
 const TeamGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, 200px);
+  grid-template-columns: repeat(auto-fill, 300px);
   grid-template-rows: min-content;
   grid-gap: 50px;
   justify-content: space-between;
@@ -156,6 +159,11 @@ const Title = styled.p`
 const Subtitle = styled.p`
   ${props => props.theme.font_size.small};
   color: ${props => props.theme.color.black.light};
+`;
+
+const SubSubtitle = styled.p`
+  ${props => props.theme.font_size.xsmall};
+  color: ${props => props.theme.color.black.medium};
 `;
 
 export default Team;

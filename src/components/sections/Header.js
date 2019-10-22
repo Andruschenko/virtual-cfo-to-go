@@ -10,12 +10,12 @@ const Header = () => (
   <StaticQuery
     query={graphql`
       query {
-        art_build: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "fast" }
+        finance_logo: file(
+          sourceInstanceName: { eq: "finance" }
+          name: { eq: "logo-chart2" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 1400) {
+            fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
@@ -27,15 +27,15 @@ const Header = () => (
         <Container>
           <Grid>
             <Art>
-              <Img fluid={data.art_build.childImageSharp.fluid} />
+              <Img fluid={data.finance_logo.childImageSharp.fluid} />
             </Art>
             <Text>
               <h1>
-                Bespoke financial solutions
+                AI assistant
                 <br />
-                for start-ups
+                to find start-ups
                 <br />
-                - powered by AI
+                bespoke financial solutions
               </h1>
               <br />
               {/* <p>
@@ -52,7 +52,7 @@ const Header = () => (
 );
 
 const HeaderWrapper = styled.header`
-  /* background-color: ${props => props.theme.color.primary}; */
+  background-color: ${props => props.theme.color.primary};
   padding-top: 96px;
 
   @media (max-width: ${props => props.theme.screen.md}) {
@@ -61,7 +61,7 @@ const HeaderWrapper = styled.header`
 `;
 
 const Art = styled.figure`
-  width: 100%;
+  width: 70%;
   margin: 0;
 
   > div {

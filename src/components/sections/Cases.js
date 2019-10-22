@@ -70,34 +70,6 @@ const Cases = () => (
         <Container>
           <Grid inverse>
             <Art>
-              <Img fluid={data.finance_risk.childImageSharp.fluid} />
-            </Art>
-            <div>
-              <h2>Foreign Currency Riskmanagement</h2>
-              <p>
-                International operations make startups vulnerable to currency fluctuations which can reduce future profits.
-                <br />
-                <br />
-                Virtual CFO to go allows you to mitigate currency fluctuations as much as possible.
-              </p>
-            </div>
-          </Grid>
-          <Grid>
-            <div>
-              <h2>Idle Cash Investment</h2>
-              <p>
-                Why leave idle cash on your bank account at zero interest when you can earn interest on it.
-                <br />
-                <br />
-                We provide you investment offerings that are matching the needs of your business
-              </p>
-            </div>
-            <Art>
-              <Img fluid={data.finance_idle_cash.childImageSharp.fluid} />
-            </Art>
-          </Grid>
-          <Grid inverse>
-            <Art>
               <Img fluid={data.finance_liquidity.childImageSharp.fluid} />
             </Art>
             <div>
@@ -107,6 +79,40 @@ const Cases = () => (
                 <br />
                 <br />
                 Virtual CFO to go allows you to always stay on top of your cashburn and run rate.
+                <br />
+                <br />
+              </p>
+            </div>
+          </Grid>
+          <Grid>
+            <div>
+              <h2>Foreign Currency Riskmanagement</h2>
+              <p>
+                International operations make startups vulnerable to currency fluctuations which can reduce future profits.
+                <br />
+                <br />
+                Virtual CFO to go allows you to mitigate currency fluctuations as much as possible.
+                <br />
+                <br />
+              </p>
+            </div>
+            <Art>
+              <Img fluid={data.finance_risk.childImageSharp.fluid} />
+            </Art>
+          </Grid>
+          <Grid inverse>
+            <Art>
+              <Img fluid={data.finance_idle_cash.childImageSharp.fluid} />
+            </Art>
+            <div>
+              <h2>Idle Cash Investment</h2>
+              <p>
+                Why leave idle cash on your bank account at zero interest when you can earn interest on it.
+                <br />
+                <br />
+                We provide you investment offerings that are matching the needs of your business
+                <br />
+                <br />
               </p>
             </div>
           </Grid>

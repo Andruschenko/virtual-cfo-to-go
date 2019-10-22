@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-absurd",
+  "name": "virtual-cfo-to-go",
   "private": true,
-  "description": "An absurd starter for Gatsby",
+  "description": "Your virtual CFO to help startups with their finances",
   "version": "0.1.0",
   "author": "Ajay NS <ajay.ns@outlook.com>",
   "dependencies": {

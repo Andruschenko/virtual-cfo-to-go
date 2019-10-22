@@ -1,9 +1,10 @@
 const theme = {
   font: {
-    primary: `'Prata', serif`,
-    secondary: `'Average', serif`,
+    primary: `'Roboto', sans-serif`,
+    secondary: `'Roboto', sans-serif`,
   },
   font_size: {
+    xsmall: 'font-size: 18px; line-height: 28px',
     small: 'font-size: 20px; line-height: 30px',
     regular: 'font-size: 24px; line-height: 32px',
     large: 'font-size: 30px; line-height: 40px',
@@ -18,6 +19,7 @@ const theme = {
     black: {
       lighter: '#ABA8AF',
       light: '#564F62',
+      medium: '#86828A',
       regular: '#211E26',
     },
     primary: '#62D29B',

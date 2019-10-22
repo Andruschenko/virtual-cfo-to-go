@@ -10,20 +10,15 @@ const FAQS = [
     title: 'Who is \'Virtual CFO to go\' for?',
     content: () => (
       <>
-        Enjoy the power of the latest web technologies – React.js , Webpack ,
-        modern JavaScript and CSS and more — all set up and waiting for you to
-        start building
+        Virtual CFO to go is built for fast growing companies to help them stay on track with their finances and keep them financially healthy.
       </>
     ),
   },
   {
-    title: 'How do choose the services which are relevant to me?',
+    title: 'How do you choose the services which are relevant to me?',
     content: () => (
       <>
-        Gatsby’s rich data plugin ecosystem lets you build sites with the data
-        you want — from one or many sources: Pull data from headless CMSs, SaaS
-        services, APIs, databases, your file system, and more directly into your
-        pages using GraphQL.
+        By providing consent to connect to your bank account we detect the which financial services are relevant for you and help you in optimising these.
       </>
     ),
   },
@@ -31,10 +26,7 @@ const FAQS = [
     title: 'What differentiates you from other products?',
     content: () => (
       <>
-        Gatsby.js is Internet Scale. Forget complicated deploys with databases
-        and servers and their expensive, time-consuming setup costs,
-        maintenance, and scaling fears. Gatsby.js builds your site as “static”
-        files which can be deployed easily on dozens of services.
+        We are a virtual finance assistant built for startups, providing bespoke services to your business and allowing you to access financial product that used to only be accessible for larger companies.
       </>
     ),
   },
