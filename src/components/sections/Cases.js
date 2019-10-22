@@ -75,10 +75,10 @@ const Cases = () => (
             <div>
               <h2>Cashflow Planing & Analysis</h2>
               <p>
-                Being financial healthy requires startups constantly staying in control of your cashflow and spending.
+                Being financially healthy requires startups to constantly stay in control of their cashflow and spendings.
                 <br />
                 <br />
-                Virtual CFO to go allows you to always stay on top of your cashburn and run rate.
+                <b>Virtual CFO to go</b> allows you to always stay on top of your cashburn and run rate.
                 <br />
                 <br />
               </p>
@@ -91,7 +91,7 @@ const Cases = () => (
                 International operations make startups vulnerable to currency fluctuations which can reduce future profits.
                 <br />
                 <br />
-                Virtual CFO to go allows you to mitigate currency fluctuations as much as possible.
+                <b>Virtual CFO to go</b> allows you to mitigate currency fluctuations as much as possible.
                 <br />
                 <br />
               </p>
@@ -120,7 +120,7 @@ const Cases = () => (
             <div>
               <h2>Accounting Assistance</h2>
               <p>
-                As soon as cash hits your bank account we create an accounting entry for it and help you reduce the operational process
+                As soon as cash hits your bank account we create an accounting entry for it and help you reduce the operational process.
               </p>
             </div>
             <Art>
