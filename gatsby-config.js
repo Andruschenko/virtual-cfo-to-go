@@ -19,16 +19,23 @@ module.exports = {
         path: `${__dirname}/src/images/art`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `finance`,
+        path: `${__dirname}/src/images/finance`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Absurd`,
-        short_name: `absurd`,
+        name: `Virtual CFO To Go`,
+        short_name: `virt-cfo-to-go`,
         start_url: `/`,
-        background_color: `#8bd8ed`,
-        theme_color: `#8bd8ed`,
+        background_color: `#62D29B`,
+        theme_color: `#62D29B`,
         display: `minimal-ui`,
         icon: `static/favicon.svg`,
       },

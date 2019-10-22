@@ -5,7 +5,7 @@ import Img from 'gatsby-image';
 
 import { Section, Container } from '@components/global';
 
-const About = () => (
+const Cases = () => (
   <StaticQuery
     query={graphql`
       query {
@@ -66,20 +66,59 @@ const About = () => (
       }
     `}
     render={data => (
-      <Section id="about" accent>
+      <Section id="cases">
         <Container>
+          <Grid inverse>
+            <Art>
+              <Img fluid={data.finance_risk.childImageSharp.fluid} />
+            </Art>
+            <div>
+              <h2>Foreign Currency Riskmanagement</h2>
+              <p>
+                International operations make startups vulnerable to currency fluctuations which can reduce future profits.
+                <br />
+                <br />
+                Virtual CFO to go allows you to mitigate currency fluctuations as much as possible.
+              </p>
+            </div>
+          </Grid>
           <Grid>
             <div>
-              <h2>It's as easy as 1, 2, 3</h2>
+              <h2>Idle Cash Investment</h2>
               <p>
-              Early stage startups often lack expertise to manage their finances.
-              <br />
-              <br />
-              We offer bespoke financial services for your business that keeps you financially healthy
+                Why leave idle cash on your bank account at zero interest when you can earn interest on it.
+                <br />
+                <br />
+                We provide you investment offerings that are matching the needs of your business
               </p>
             </div>
             <Art>
-              <Img fluid={data.finance_easy.childImageSharp.fluid} />
+              <Img fluid={data.finance_idle_cash.childImageSharp.fluid} />
+            </Art>
+          </Grid>
+          <Grid inverse>
+            <Art>
+              <Img fluid={data.finance_liquidity.childImageSharp.fluid} />
+            </Art>
+            <div>
+              <h2>Cashflow Planing & Analysis</h2>
+              <p>
+                Being financial healthy requires startups constantly staying in control of your cashflow and spending.
+                <br />
+                <br />
+                Virtual CFO to go allows you to always stay on top of your cashburn and run rate.
+              </p>
+            </div>
+          </Grid>
+          <Grid>
+            <div>
+              <h2>Accounting Assistance</h2>
+              <p>
+                As soon as cash hits your bank account we create an accounting entry for it and help you reduce the operational process
+              </p>
+            </div>
+            <Art>
+              <Img fluid={data.finance_account.childImageSharp.fluid} />
             </Art>
           </Grid>
         </Container>
@@ -133,4 +172,4 @@ const Art = styled.figure`
   width: 100%;
 `;
 
-export default About;
+export default Cases;
